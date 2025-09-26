@@ -1,0 +1,65 @@
+.login_container{
+-fx-background-color:#FFE4E1;
+}
+.login_logo_container{
+    -fx-alignment:center;
+    -fx-background-radius:5;
+}
+.login_form_container{
+    -fx-background-color: #E8D9DD;
+    -fx-alignment:TOP_RIGHT;
+}
+.login_form_center{
+    -fx-background-color: #E8D9DD;
+    -fx-effect:dropshadow(three-pass-box , #575555, 5,0,0,6);
+    -fx-background-radius:10;
+    -fx-spacing:10;
+}
+.center_2{
+    -fx-background-color:#F4DFDF;
+    -fx-background-radius:10;
+}
+.center_2 Text{
+    -fx-font-weight:bold;
+    -fx-fill:#132A13;
+    -fx-font-size:1.4em;
+}
+.login_form_centerTop{
+    -fx-alignment:center;
+    -fx-spacing:5;
+}
+.login_form_centerTop Label{
+    -fx-text-fill:green;
+}
+.login_form_center_center{
+    -fx-spacing:15;
+
+}
+.login_form_entries{
+    -fx-alignment:top_left;
+    -fx-padding: 0 0 0 30;
+    -fx-spacing:40;
+}
+.menu_container{
+    -fx-padding:10 10 10 20;
+    -fx-spacing:20;
+    -fx-alignment: top_center;
+}
+.menu_container Button{
+    -fx-pref-height:80;
+    -fx-pref-width:140;
+    -fx-border-radius:50;
+    -fx-background-color:#E0B0FF;
+    -fx-text-fill:#132A13;
+    -fx-font-size:1.1em;
+    -fx-alignment: center;
+    -fx-effect:dropshadow(three-pass-box , #575555, 5,0,0,6);
+}
+.menu_container Button:hover{
+    -fx-cursor:hand;
+    -fx-background-color:#FFF0F5;
+    -fx-text-fill:#132A13;
+}
+
+
+
