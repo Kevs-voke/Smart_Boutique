@@ -1,4 +1,4 @@
-package rtx.smart_boutique;
+package rtx.smart_boutique.Controllers.Admin;
 
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -20,7 +20,7 @@ public class ProfileController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-addListener();;
+    addListener();
     }
     public void addListener(){
         email_btn.setOnAction(event -> changeEmail());

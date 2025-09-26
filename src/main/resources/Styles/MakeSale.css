@@ -1,0 +1,76 @@
+.Make_Sale_Container{
+    -fx-background-color:#FFE4E1;
+}
+.header{
+    -fx-background-radius:20;
+    -fx-background-color: #E8D9DD;
+    -fx-effect:dropshadow(three-pass-box, #FFFAF0, 10, 0, 0,10);
+    -fx-alignment:center;
+}
+.header Text{
+    -fx-font-size:1.4em;
+    -fx-fill:#132A13;
+    -fx-font-weight:bold;
+}
+.d_container{
+    -fx-background-color: #E8D9DD;
+    -fx-background-radius:5;
+}
+.d_entries{
+    -fx-alignment:center;
+}
+.d_entries Text{
+    -fx-fill:#132A13;
+    -fx-font-size:1.1em;
+}
+.d_controls{
+    -fx-alignment:center;
+    -fx-spacing:10;
+}
+.d_controls Button{
+    -fx-border-radius:10;
+    -fx-background-color:#E0B0FF;
+    -fx-text-fill:#132A13;
+    -fx-font-size:1.1em;
+    -fx-alignment: center_left;
+    -fx-effect:dropshadow(three-pass-box , #575555, 5,0,0,6);
+}
+.d_controls Button:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#FFF0F5;
+}
+
+.Totals{
+    -fx-alignment:center_right;
+    -fx-spacing:10;
+}
+.Totals Text{
+    -fx-fill:#132A13;
+    -fx-font-size:1.1em;
+    -fx-font-weight:bold;
+}
+.Totals Label{
+    -fx-font-size:1.3em;
+    -fx-fill:#132A13;
+    -fx-font-weight:bold;
+    -fx-alignment:center;
+    -fx-background-color:#E8D9DD;
+}
+.tableview_controls{
+    -fx-alignment:center;
+    -fx-spacing:20;
+}
+.tableview_controls Button{
+    -fx-pref-height:30;
+    -fx-pref-width:80;
+    -fx-border-radius:10;
+    -fx-background-color:#E0B0FF;
+    -fx-text-fill:#132A13;
+    -fx-font-size:1.1em;
+    -fx-alignment: center_left;
+    -fx-effect:dropshadow(three-pass-box , #575555, 5,0,0,6);
+}
+.tableview_controls Button:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#D3B8AE;
+}

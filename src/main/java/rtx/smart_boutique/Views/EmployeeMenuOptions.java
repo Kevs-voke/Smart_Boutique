@@ -1,7 +1,8 @@
 package rtx.smart_boutique.Views;
 
-public enum Employee {
+public enum EmployeeMenuOptions {
     DASHBOARD,
     MAKE_SALE,
-    VIEW_SALES
+    VIEW_SALES,
+    PROFILE
 }

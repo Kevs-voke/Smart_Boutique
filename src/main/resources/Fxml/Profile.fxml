@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Fxml.Profile"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="800.0" prefWidth="1008.0" styleClass="Profile_Container" stylesheets="@../Styles/profile.css"
+            xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rtx.smart_boutique.Controllers.Admin.ProfileController">
+    <VBox alignment="CENTER" layoutX="30.0" layoutY="420.0" prefHeight="214.0" prefWidth="963.0"
+          styleClass="entries_container">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Change Your Email" wrappingWidth="164.55584716796875"/>
+        <HBox prefHeight="94.0" prefWidth="963.0" styleClass="enterText">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your New Email"
+                  wrappingWidth="164.6410140991211"/>
+            <TextField fx:id="email_txt" prefHeight="26.0" prefWidth="336.0"/>
+        </HBox>
+        <Button fx:id="email_btn" mnemonicParsing="false" prefHeight="25.0" prefWidth="132.0" text="OK"/>
+    </VBox>
+    <VBox alignment="CENTER" layoutX="30.0" layoutY="184.0" prefHeight="215.0" prefWidth="963.0"
+          styleClass="entries_container">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Change your Password"/>
+        <Label fx:id="chPassword_lbl" prefHeight="20.0" prefWidth="171.0"/>
+        <VBox alignment="CENTER" prefHeight="119.0" prefWidth="963.0">
+            <HBox prefHeight="37.0" prefWidth="963.0" styleClass="enterText">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="enterText"
+                      text="Enter Your New Password" wrappingWidth="186.62667083740234"/>
+                <TextField fx:id="newPass_txt"/>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="963.0" styleClass="enterText">
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm  Password"
+                      wrappingWidth="186.62667083740234"/>
+                <TextField fx:id="confPass_txt"/>
+            </HBox>
+        </VBox>
+        <Button fx:id="pass_btn" mnemonicParsing="false" prefHeight="25.0" prefWidth="132.0" text="OK"/>
+    </VBox>
+    <HBox layoutX="350.0" layoutY="30.0" prefHeight="45.0" prefWidth="349.0" styleClass="header">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Your Profile"/>
+    </HBox>
 </AnchorPane>

@@ -1,31 +1,54 @@
-package rtx.smart_boutique.Controllers.Employee;
+package rtx.smart_boutique.Model;
+
+import javafx.beans.property.SimpleDoubleProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
 
 public class ItemRecord {
-    private String name;
-    private int quantity;
-    private double unit_price;
-    private double total_price;
+    private final SimpleStringProperty name;
+    private final SimpleIntegerProperty quantity;
+    private final SimpleDoubleProperty unit_price;
+    private final SimpleStringProperty description;
+    private final SimpleDoubleProperty total_Price;
 
-    public ItemRecord(String name, int quantity, double unit_price, double total_price) {
-        this.name = name;
-        this.quantity = quantity;
-        this.unit_price = unit_price;
-        this.total_price = total_price;
+    public ItemRecord(String description, String name, int quantity, double unit_price) {
+        this.name = new SimpleStringProperty(name);
+        this.quantity = new SimpleIntegerProperty(quantity);
+        this.unit_price = new SimpleDoubleProperty(unit_price);
+        this.description = new SimpleStringProperty(description);
+        this.total_Price = new SimpleDoubleProperty();
     }
 
-    public String getName() {
+  public ItemRecord(String name, int quantity, double unit_price, double totalprice) {
+        this.name = new SimpleStringProperty(name);
+        this.quantity = new SimpleIntegerProperty(quantity);
+        this.unit_price = new SimpleDoubleProperty(unit_price);
+        this.total_Price = new SimpleDoubleProperty(totalprice);
+         this.description = new SimpleStringProperty();
+    }
+
+    public SimpleStringProperty nameProperty() {
         return name;
     }
-
-    public int getQuantity() {
+    public SimpleIntegerProperty quantityProperty() {
         return quantity;
     }
-
-    public double getUnit_price() {
+    public SimpleDoubleProperty unit_priceProperty() {
         return unit_price;
     }
-
-    public double getTotal_price() {
-        return total_price;
+    public SimpleDoubleProperty total_PriceProperty(){return total_Price;}
+    public SimpleStringProperty descriptionProperty(){return  description;};
+    public void setName(String newName) {
+        name.set(newName);
     }
+    public void setQuantity(int newQuantity) {
+        quantity.set(newQuantity);
+    }
+    public void setUnitPrice(double newUnitPrice) {
+        unit_price.set(newUnitPrice);
+    }
+    public void setTotalPrice(double newTotalPrice){
+        total_Price.set(newTotalPrice);
+    }
+
 }

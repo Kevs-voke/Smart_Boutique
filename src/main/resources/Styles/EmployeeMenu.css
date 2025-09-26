@@ -1,0 +1,83 @@
+.clientMenu_Container{
+    -fx-background-color:#FFE4E1;
+    -fx-alignment:center;
+    -fx-padding:0 10 0 10;
+}
+
+.left_container{
+    -fx-background-color:#F0E0E6;
+    -fx-background-radius: 10 0 10 0;
+    -fx-effect:dropshadow(two-pass-box, #AAAAAA, 5,0,0,4);
+}
+.FontAwesomeIconView{
+    -fx-fill:#132A13;
+}
+.title_container{
+    -fx-background-color:#F0E0E6;
+    -fx-background-radius: 20 20 0 0;
+    -fx-alignment:top_center;
+
+}
+.title_container Text{
+    -fx-fill:#000000;
+    -fx-font-size:1.5em;
+}
+.menu_container{
+    -fx-padding:10 10 10 20;
+    -fx-spacing:20;
+}
+.menu_container Button{
+    -fx-pref-height:115;
+    -fx-pref-width:130;
+    -fx-border-radius:10;
+    -fx-background-color:#FFE4E1;
+    -fx-text-fill:#132A13;
+    -fx-font-size:1.1em;
+    -fx-alignment: center_left;
+    -fx-effect:dropshadow(three-pass-box , #575555, 5,0,0,6);
+}
+.menu_container Button:hover{
+    -fx-cursor:hand;
+    -fx-background-color:#FFF0F5;
+    -fx-text-fill:#132A13;
+}
+.alt_menu-btn{
+    -fx-pref-height:115;
+    -fx-pref-width:145;
+    -fx-background-color:#E0B0FF;
+    -fx-text-fill:#132A13;
+    -fx-font-size:1.1em;
+    -fx-alignment:center_left;
+}
+.alt_menu-btn:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#D3B8AE;
+}
+.alt_menu-btn:clicked{
+    -fx-background-color:#F4DFDF;
+    -fx-text-fill: #E8D9DD
+}
+.report_container{
+    -fx-background-color: #E8D9DD;
+    -fx-background-radius:10;
+    -fx-alignment:center;
+    -fx-spacing:10;
+    -fx-padding:10,0,10,0;
+
+}
+.report_container Text{
+    -fx-font-weight:bold;
+}
+.report_container Label{
+    -fx-alignment:center;
+    -fx-wrap-text:true;
+}
+.report_container Button{
+    -fx-pref-width: 80;
+    -fx-background-color:#E0B0FF;
+    -fx-text-fill:#132A13;
+}
+.report_container Button:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#D3B8AE;
+}

@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Fxml.Admin.ViewEmployee"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="720.0" prefWidth="1008.0" styleClass="vew_Sales_container" stylesheets="@../../Styles/ViewSales.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rtx.smart_boutique.Controllers.Admin.ViewEmployeeController">
+    <ListView fx:id="employee_lstView" layoutX="21.0" layoutY="134.0" prefHeight="549.0" prefWidth="952.0" />
+    <HBox layoutX="325.0" layoutY="21.0" prefHeight="32.0" prefWidth="327.0" styleClass="header">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="View Employees Details" />
+    </HBox>
+    <HBox layoutX="628.0" layoutY="78.0" prefHeight="44.0" prefWidth="339.0" styleClass="d_controls">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search" />
+        <TextField fx:id="search_txt" />
+        <Button fx:id="clear_btn" mnemonicParsing="false" text="Clear " />
+    </HBox>
+   <HBox layoutX="21.0" layoutY="87.0" prefHeight="46.0" prefWidth="145.0" styleClass="alt_menu">
+      <children>
+          <Button fx:id="deleteEmployee_btn" mnemonicParsing="false" prefHeight="38.0" prefWidth="145.0" styleClass="alt_menu" text="Delete Employee" />
+      </children>
+   </HBox>
+   <HBox layoutX="204.0" layoutY="87.0" prefHeight="48.0" prefWidth="106.0" styleClass="alt_menu">
+      <children>
+         <Button fx:id="setAdmin_btn" alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="39.0" prefWidth="105.0" styleClass="alt_menu" text="Set  Admin" />
+      </children>
+   </HBox>
+   <HBox layoutX="346.0" layoutY="87.0" prefHeight="50.0" prefWidth="146.0" styleClass="alt_menu">
+      <children>
+         <Button fx:id="removeAdmin_btn" alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="41.0" prefWidth="150.0" styleClass="alt_menu" text="Remove  Admin" />
+      </children>
+   </HBox>
 </AnchorPane>

@@ -1,0 +1,52 @@
+.Profile_Container{
+    -fx-background-color:#FFE4E1;
+}
+
+.header{
+    -fx-background-radius:20;
+    -fx-background-color: #E8D9DD;
+    -fx-effect:dropshadow(three-pass-box, #FFFAF0, 10, 0, 0,10);
+    -fx-alignment:center;
+}
+.header Text{
+    -fx-font-weight:bold;
+    -fx-fill:#132A13;
+    -fx-font-size:1.4em;
+}
+.entries_container{
+    -fx-background-color:#F4DFDF;
+    -fx-background-radius:10;
+
+}
+.entries_container Text{
+    -fx-font-weight:bold;
+    -fx-fill:#132A13;
+    -fx-font-size:1.1em;
+}
+.entries_container Label{
+    -fx-text-fill:green;
+}
+ Button{
+    -fx-pref-height:30;
+    -fx-pref-width:80;
+    -fx-border-radius:50;
+    -fx-background-color:#E0B0FF;
+    -fx-text-fill:#132A13;
+    -fx-font-size:1.1em;
+    -fx-alignment: center;
+    -fx-effect:dropshadow(three-pass-box , #575555, 5,0,0,6);
+}
+Button:hover{
+    -fx-cursor:hand;
+    -fx-background-color:#FFF0F5;
+    -fx-text-fill:#132A13;
+}
+.enterText{
+    -fx-alignment:center;
+    -fx-spacing:20;
+}
+.enterText Text{
+    -fx-font-weight:none;
+    -fx-fill:#132A13;
+    -fx-font-size:1.1em;
+}

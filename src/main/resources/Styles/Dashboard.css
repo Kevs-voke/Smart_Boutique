@@ -1,0 +1,92 @@
+.dashboard_container{
+    -fx-background-color:#FFE4E1;
+}
+.header{
+    -fx-background-radius:20;
+    -fx-background-color: #E8D9DD;
+    -fx-effect:dropshadow(three-pass-box, #FFFAF0, 10, 0, 0,10);
+}
+.logo_container{
+    -fx-alignment:center;
+
+
+}
+.logo_container Label{
+    -fx-text-fill:#AAAAAA;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size:1.8em;
+}
+.header_date{
+    -fx-alignment:top_right;
+}
+.header_date Label{
+    -fx-text-fill:#AAAAAA;
+    -fx-font-size:1.8em;
+}
+
+.header_time{
+    -fx-background-radius:50;
+    -fx-effect:dropshadow(three-pass-box, #AAAAAA, 10, 0, 0,10);
+    -fx-background-color:#FFE4E1;
+    -fx-alignment:center;
+}
+.header_time Label{
+    -fx-font-size:2.1em;
+    -fx-text-fill:#E0B0FF;
+
+}
+.total_sales_container{
+    -fx-alignment:center;
+}
+.tsales_container{
+    -fx-alignment:center;
+    -fx-padding:10;
+    -fx-spacing:10;
+    -fx-border-radius:10;
+    -fx-border-color:#999999;
+    -fx-border-width:3;
+    -fx-border-styles:dashed;
+}
+
+.tsales_container Text{
+    -fx-font-size:2.1em;
+    -fx-text-fill:#E0B0FF;
+}
+.tsales_container Label{
+    -fx-font-size:2.1em;
+    -fx-text-fill:#AAAAAA;
+}
+.hourly_sales{
+    -fx-alignment:center;
+    -fx-border-width:0,0,0,1;
+    -fx-border-color:#999999;
+    -fx-spacing:4;
+}
+.purchase{
+    -fx-alignment:top_center;
+    -fx-spacing:15;
+}
+.purchase Text{
+    -fx-font-size:1.4em;
+    -fx-text-fill:#E0B0FF;
+}
+.purchase Label{
+    -fx-font-size:2.1em;
+    -fx-text-fill:#AAAAAA;
+}
+.timelabel{
+    -fx-text-fill:#132A13;
+}
+.record-breaker-btn{
+    -fx-pref-height:30;
+    -fx-pref-width:80;
+    -fx-background-color:#E8D9DD;
+    -fx-text-fill:#132A13;
+    -fx-font-size:1.4em;
+    -fx-alignment:center_left;
+    -fx-background-radius:10;
+}
+.record-breaker-btn:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#D3B8AE;
+}
